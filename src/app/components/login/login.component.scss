@@ -1,0 +1,151 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f7fafd;
+}
+
+.login-card {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  width: 380px;
+  text-align: center;
+  border-radius: 16px;
+  border: 1px solid rgba(197, 6, 78, 0.3); // subtle border like your screenshot
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+
+h2 {
+  font-weight: bold;
+   margin-bottom: 2px;
+}
+
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #0000006B;
+  margin-bottom: 30px;
+}
+
+.custom-form-group {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+}
+
+.input-icon {
+  margin-right: 10px;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  padding: 6px 0;
+  background: transparent;
+  color: #000;
+
+  &::placeholder {
+    text-transform: uppercase;
+    // letter-spacing: 1px;
+    color: #888;
+  }
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 0.85rem;
+
+  .remember {
+    display: flex;
+    align-items: center;
+    color: #333;
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+      accent-color: #9c27b0;
+    }
+  }
+
+  .forgot {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px 0;
+  background: #0077b6;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+      margin: 0 auto;
+    max-width: 170px;
+  transition: background 0.3s;
+
+  i {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background: #005f91;
+  }
+
+  &:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+}
+
+.signup {
+  margin-top: 25px;
+  font-size: 0.9rem;
+
+  a {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

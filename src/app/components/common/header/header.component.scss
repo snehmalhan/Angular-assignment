@@ -1,0 +1,52 @@
+/* General styling */
+:host {
+  display: block;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: calc(100% - 200px);
+    margin-left: auto;
+
+}
+
+.header-left h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.notifications {
+  margin-right: 20px;
+}
+
+.notification-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}

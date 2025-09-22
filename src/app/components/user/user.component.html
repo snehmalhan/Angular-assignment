@@ -1,0 +1,61 @@
+<div class="user-card">
+    <div class="user-table-header">
+        <h1>User Table</h1>
+        <!-- <hr class="header-line" /> -->
+    </div>
+    <div class="search-bar">
+        <span class="material-symbols-outlined search">
+            search
+        </span>
+        <input type="text" placeholder="Search by first or last name..." [(ngModel)]="searchQuery"
+            (input)="filterUsers()" />
+    </div>
+
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Email Id</th>
+                    <th>Phone Number</th>
+                    <th>Birth Date</th>
+                    <th>Image</th>
+                    <th>Edit</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <div class="scrollable-body">
+            <tbody>
+                <tr *ngFor="let user of filteredUserList; let i = index">
+                    <td>{{ user?.id || 'NA' }}</td>
+                    <td>{{ user?.firstName || 'NA' }}</td>
+                    <td>{{ user?.lastName || 'NA' }}</td>
+                    <td>{{ user?.gender || 'NA' }}</td>
+                    <td>{{ user?.email || 'NA' }}</td>
+                    <td>{{ user?.phone || 'NA' }}</td>
+                    <!-- <td>{{ user?.birthDate }}</td> -->
+                    <td>{{ user?.birthDate | date: 'dd/MM/yyyy' }}</td>
+                    <td>
+                        <!-- <img src="assets/IconImage.png" alt="User Image" class="user-image" /> -->
+                        <img [src]=user?.image alt="User Profile" />
+                    </td>
+                    <td>
+                        <button class="edit-btn" (click)="editUser(user)">Edit</button>
+                    </td>
+                    <td>
+                        <button class="details-btn" (click)="viewDetails(user)">View Details</button>
+                    </td>
+                </tr>
+            </tbody>
+            </div>
+        </table>
+    </div>
+
+    <div class="no-data-found" *ngIf="filteredUserList?.length === 0">
+        <span>No users found</span>
+    </div>
+</div>

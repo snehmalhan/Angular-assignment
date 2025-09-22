@@ -1,0 +1,34 @@
+<div class="dashboard-sidebar">
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+  </div>
+
+  <!-- Dynamic Routes (Dashboard, User Page, Product Page) -->
+  <ul class="list-group2">
+    <li *ngFor="let route of routes">
+      <a class="list-group-item list-group-item-action {{ route.data.title }}"
+         routerLinkActive="active"
+         [routerLink]="[route.path]"
+         (click)="redirecttoPage(route.path)">
+        <span>{{ route.data.title }}</span>
+      </a>
+    </li>
+  </ul>
+
+  <!--Bottom Options -->
+  <div class="bottom-menu">
+    <a class="bottom-item" >
+      <i class="material-symbols-outlined">settings</i>
+      <span>Setting</span>
+    </a>
+    <a class="bottom-item" >
+      <i class="material-symbols-outlined">help</i>
+      <span>Help</span>
+    </a>
+    <a class="bottom-item" (click)="logout()">
+      <i class="material-symbols-outlined">logout</i>
+      <span>Logout</span>
+    </a>
+  </div>
+</div>

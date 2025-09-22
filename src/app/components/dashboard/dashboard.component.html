@@ -1,0 +1,34 @@
+<div class="dashboard-card">
+    <div class="dashboard-cardInner">
+    <div class="info-section">
+        <h4><strong>WELCOME,</strong> {{ user?.firstName ? user?.firstName : 'NA'}} {{user?.lastName ? user?.lastName : 'NA'}} !</h4>
+        <div class="details">
+            <div>
+                <p>Test Team</p>
+                <h4>{{ user?.company ?  user?.company?.name : 'NA' }}</h4>
+            </div>
+            <div>
+                <p>E-mail</p>
+                <h4>{{ user?.email ?  user?.email : 'NA' }}</h4>
+            </div>
+            <div>
+                <p >Sales Person</p>
+                <h4>{{ user?.firstName ?  user?.firstName : 'NA' }}</h4>
+            </div>
+            <div>
+                <p>Contact Number</p>
+                <h4>{{ user?.phone ?  user?.phone : 'NA' }}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="profile-section">
+        <img src="assets/picture-profile.png" alt="User Profile" />
+        <button class="settings-btn">
+            <!-- <span class="gear-icon">&#9881;</span> -->
+            <span class="material-symbols-outlined">
+                settings
+            </span>
+        </button>
+    </div>
+    </div>
+</div>

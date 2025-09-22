@@ -1,0 +1,58 @@
+<div class="login-container">
+  <div class="login-card">
+    <img src="assets/logo.png" alt="Logo" class="logo" />
+
+    <h2>WELCOME BACK</h2>
+    <p class="subtitle">Please login to your account</p>
+       
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <!-- Username -->
+      <div class="custom-form-group">
+        <div class="input-wrapper">
+          <span class="input-icon">
+            <img src="assets/Profile.png" alt="username" />
+          </span>
+          <input
+            type="text"
+            formControlName="username"
+            placeholder="USERNAME"
+          />
+        </div>
+      </div>
+
+      <!-- Password -->
+      <div class="custom-form-group">
+        <div class="input-wrapper">
+          <span class="input-icon">
+            <img src="assets/Lock.png" alt="password" />
+          </span>
+          <input
+            type="password"
+            formControlName="password"
+            placeholder="PASSWORD"
+          />
+        </div>
+      </div>
+
+      <!-- Remember Me & Forgot -->
+      <div class="options">
+        <label class="remember">
+          <input type="checkbox" formControlName="rememberMe" />
+          Remember Me
+        </label>
+        <a class="forgot" href="#">Forgot password?</a>
+      </div>
+
+      <!-- Login Button -->
+      <button type="submit" class="btn-login">
+        <i class="material-symbols-outlined">login</i>
+        <span>LOGIN</span>
+      </button>
+    </form>
+
+    <p class="signup">
+      Don’t have an account? <a href="#">Sign up.</a>
+    </p>
+  </div>
+</div>

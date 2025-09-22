@@ -1,1 +1,124 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~notyf/notyf.min.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+table thead tr th {
+    font-weight: 600;
+    background-color: #F4F4F4 !important
+}
+
+.notyf__message {
+    font-size: 12px;
+}
+
+body.dialog-minimized .notyf:nth-child(8),
+body.dialog-minimized .notyf:nth-child(10) {
+    display: none;
+}
+
+body.dialog-minimized .notyf-announcer+.cdk-overlay-container .cdk-overlay-backdrop:nth-child(1) {
+    display: none;
+}
+
+body.dialog-minimized .notyf-announcer+.cdk-overlay-container {
+    position: static;
+    pointer-events: all;
+    height: auto;
+}
+
+body.dialog-minimized .notyf-announcer+.cdk-overlay-container .cdk-global-overlay-wrapper:nth-child(2) {
+    pointer-events: all;
+    position: static;
+}
+
+body.dialog-minimized .notyf {
+    display: none;
+}
+
+.mainPage-wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.mainPage-wrapper>.row {
+    margin: 0;
+}
+
+body.workspace .mainPage-wrapper app-left-panel#leftpanel #aBox {
+    left: -50px;
+}
+
+
+.mainPage-wrapper .rightMain_wrap {
+    position: relative;
+    transition: 0.3s ease;
+    margin-left: auto;
+    width: calc(100% - 200px);
+    padding: 12px;
+    margin-top: 0px;
+    margin-top: 76px;
+}
+
+
+
+body.workspace .mainPage-wrapper app-left-panel#leftpanel #aBox.inactive .logo_Wrap p i {
+    right: -58px;
+    background-color: rgba(0, 0, 0, 0.68);
+    border-radius: 4px;
+    height: 49px;
+    width: 42px;
+    top: 5px;
+    justify-content: center;
+    box-shadow: 0px 2.98239px 7.45599px rgba(0, 0, 0, 0.25);
+    display: flex;
+    color: #ffffff;
+}
+
+// body.workspace .mainPage-wrapper app-left-panel#leftpanel #aBox.inactive .logo_Wrap p i:hover {
+//     background-color: #0abfab;
+//     color: #ffffff;
+// }
+body.workspace .mainPage-wrapper app-left-panel#leftpanel #aBox.inactive .logo_Wrap p i:hover {
+    // background-color: #0abfab;
+    // color: #ffffff;
+    color: #FEEC4A;
+}
+
+body.workspace .mainPage-wrapper app-left-panel#leftpanel #aBox.active {
+    left: 0;
+}
+
+app-left-panel#leftpanel {
+    width: 200px;
+}
+
+table.table>tbody>tr td img {
+    width: 40px;
+}
+
+.user-table-header {
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(25, 133, 181, 0.39);
+}
+
+.user-table-header>h1 {
+    font-size: 20px;
+    font-weight: 600;
+}

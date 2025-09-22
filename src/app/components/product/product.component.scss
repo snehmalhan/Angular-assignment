@@ -1,0 +1,84 @@
+.user-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+// .user-table-header {
+//     margin-bottom: 15px;
+//     border-bottom: 1px solid rgba(25, 133, 181, 0.39);
+// }
+
+// .user-table-header>h1 {
+//     font-size: 20px;
+//     font-weight: 600;
+// }
+
+.scrollable-body {
+  max-height: 400px; /* You can adjust the height */
+  overflow-y: auto;
+  display: block;
+}
+
+.scrollable-body table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+//   font-family: 'Inter', sans-serif;
+}
+
+// .table thead tr {
+//   background-color: green !important;
+// }
+
+
+.table th,
+.table td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 14px;
+  color: #333;
+}
+
+.table thead {
+//   background-color: #F4F4F4;
+  font-weight: 600;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.table tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+.user-image {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 4px;
+  background-color: #d4eaf9;
+  padding: 2px;
+}
+
+.no-data-found {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 16px;
+}
+
+
+
