@@ -4,7 +4,7 @@
             <!-- <hr class="header-line" /> -->
         </div>
 
-        <div class="table-responsive">
+        <div class="table-responsive scroll-container">
             <table class="table">
                 <thead>
                     <tr>
@@ -21,7 +21,6 @@
                         <th>Image</th>
                     </tr>
                 </thead>
-                <div class="scrollable-body">
                 <tbody>
                     <tr *ngFor="let user of productList; let i = index">
                         <td>{{ user?.id || 'NA' }}</td>
@@ -34,7 +33,6 @@
                         </td>
                     </tr>
                 </tbody>
-                </div>
             </table>
         </div>
 

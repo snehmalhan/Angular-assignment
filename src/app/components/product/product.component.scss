@@ -16,17 +16,10 @@
 //     font-weight: 600;
 // }
 
-.scrollable-body {
-  max-height: 400px; /* You can adjust the height */
+.scroll-container {
+  max-height: 380px; /* or any height you want */
   overflow-y: auto;
-  display: block;
 }
-
-.scrollable-body table {
-  width: 100%;
-  table-layout: fixed;
-}
-
 
 .table-responsive {
   overflow-x: auto;
